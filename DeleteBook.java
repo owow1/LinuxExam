@@ -21,7 +21,7 @@ public class DeleteBook extends HttpServlet{
     static final String USER = "root";
     static final String PASS = "Bb20010122@";
     
-    static final String SQL_BOOK_DELETA = "DELETE FROM book WHERE id =1 ";
+    static final String SQL_BOOK_DELETA = "DELETE FROM book WHERE id =? ";
     static Connection conn = null;       
            public void init() {
          		try {

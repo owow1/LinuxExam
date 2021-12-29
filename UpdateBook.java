@@ -22,7 +22,7 @@ public class UpdateBook extends HttpServlet{
     static final String USER = "root";
     static final String PASS = "Bb20010122@";
     
-    static final String SQL_BOOK_UPDATE = "UPDATE book SET name = 生日 , author = 王凯 WHERE id = 2 ";
+    static final String SQL_BOOK_UPDATE = "UPDATE book SET name =? , author =? WHERE id =?  ";
     private static Connection conn = null;
 	
     public void init() {

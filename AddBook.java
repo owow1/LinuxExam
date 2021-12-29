@@ -21,7 +21,7 @@ public class AddBook extends HttpServlet{
     		+ "&characterEncoding=utf8&useSSL=false&serverTimezone=GMT%2B8";
     static final String USER = "root";
     static final String PASS = "Bb20010122@";
-	static final String SQL_BOOK_ADD = "INSERT INTO book( name , author ) VALUES (1,王凯)";
+	static final String SQL_BOOK_ADD = "INSERT INTO book( name , author ) VALUES (?,?)";
 	private static Connection conn = null;
 	
     public void init() {
